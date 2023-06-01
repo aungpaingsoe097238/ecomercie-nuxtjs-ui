@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <nav class=" d-flex justify-content-around align-items-center p-2 border ">
+    <div class=" border">
+        <nav class=" container d-flex justify-content-between align-items-center p-2 ">
             <div>
                 <span class=" d-flex align-items-center">
                     <div class=" bg-primary p-1 rounded-2 me-2">
