@@ -1,5 +1,5 @@
 <template>
-    <div class=" border">
+    <div class=" border bg-white">
         <nav class=" container d-flex justify-content-between align-items-center p-2 ">
             <div>
                 <span class=" d-flex align-items-center">
@@ -11,7 +11,7 @@
             </div>
             <div class=" w-50">
                 <div class=" input-group">
-                    <input class="form-control rounded-end-0 w-50 border border-2 border-primary" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control rounded-end-0 w-25 border border-2 border-primary" type="search" placeholder="Search" aria-label="Search">
                     <select name="" id="" class=" form-select rounded-0 border border-primary border-2">
                         <option value="">All Category</option>
                         <option value="">Category One</option>
@@ -42,12 +42,11 @@
                 </ul>
             </div>
         </nav>
-        <NavBarMenus/>
+        <TopNavBarMenus/>
     </div>
 </template>
 
 <script setup>
-;
 </script>
 
 <style lang="scss" scoped></style>

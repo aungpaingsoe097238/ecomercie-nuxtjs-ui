@@ -1,8 +1,8 @@
 <template>
-    <div class=" border ">
+    <div class=" border bg-white ">
         <nav class="container d-flex justify-content-between align-items-center p-2 ">
-        <ul class=" list-unstyled fw-bold d-flex gap-3 mb-0 ">
-            <li class=" d-flex align-items-center gap-1">
+        <ul class=" list-unstyled fw-semibold d-flex align-items-center gap-3 mb-0 ">
+            <li class=" d-flex align-items-center gap-2">
                 <IconsIcBaselineMenu class=" h4 mb-0" />
                 All Category
             </li>
@@ -19,7 +19,9 @@
                 Menu item
             </li>
             <li>
-                Help
+                <select name="" id="" class=" form-select border-0 ">
+                    <option value="">Help</option>
+                </select>
             </li>
         </ul>
         <div class=" d-flex align-items-center gap-1 ">

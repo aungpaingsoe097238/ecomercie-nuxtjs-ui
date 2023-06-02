@@ -1,8 +1,13 @@
 <template>
   <div>
     <NuxtLayout>
-      <NavBar />
-      <NuxtPage/>
+      <div class=" bg-secondary-subtle">
+        <TopNavBar />
+        <div class="container">
+          <NuxtPage />
+        </div>
+        <BottomFooter />
+      </div>
     </NuxtLayout>
   </div>
 </template>
