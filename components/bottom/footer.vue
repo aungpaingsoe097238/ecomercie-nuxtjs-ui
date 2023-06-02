@@ -1,7 +1,7 @@
 <template>
     <div class="border bg-white">
-        <div class="container d-flex py-4">
-            <div class="col-4">
+        <div class="container d-flex flex-column flex-lg-row py-4">
+            <div class="col-12 col-lg-4">
                 <div>
                     <span class=" d-flex align-items-center">
                         <div class=" bg-primary p-1 rounded-2 me-2">
@@ -36,7 +36,7 @@
                 </div>
             </div>
             <div class="col-8">
-                <div class=" d-flex justify-content-between">
+                <div class=" d-flex flex-lg-row flex-column justify-content-between">
                     <div>
                         <ul class=" list-unstyled text-black-50">
                             <li class=" fw-bold mb-2 text-dark">About</li>
@@ -89,7 +89,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="">
+                    <div>
                         <ul class=" list-unstyled d-flex flex-column gap-2">
                             <li class="fw-bold mb-2">Get app</li>
                             <li>
@@ -116,13 +116,13 @@
             </div>
         </div>
         <div class=" d-flex justify-content-between align-content-center px-2 bg-secondary-subtle align-items-center p-2">
-           <div>@ 2023 Ecomerce</div>  
-           <div>
-            <select name="" id="" class=" border-0 form-select bg-secondary-subtle ">
-                <option value="">English</option>
-                <option value="">Myanmar</option>
-            </select>
-           </div>
+            <div>@ 2023 Ecomerce</div>
+            <div>
+                <select name="" id="" class=" border-0 form-select bg-secondary-subtle ">
+                    <option value="">English</option>
+                    <option value="">Myanmar</option>
+                </select>
+            </div>
         </div>
     </div>
 </template>

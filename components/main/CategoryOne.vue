@@ -1,7 +1,7 @@
 <template>
     <div class=' bg-white rounded-2 category-one'>
         <div class="row">
-            <div class="col-3">
+            <div class="col-12 col-lg-3">
                 <div>
                     <div class=" p-3">
                         <span class=" d-block fw-bold fs-5">Home and outdoor</span>
@@ -12,7 +12,7 @@
             <div class="col-9">
                 <div>
                     <table class=" table table-bordered mb-0">
-                        <tr class=" category-one-item">
+                        <tr class=" category-one-item ">
                             <td class=" position-relative">
                                 <div class=" mb-4">
                                     <p class=" fw-medium mb-1">Soft Chairs</p>

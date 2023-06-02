@@ -1,15 +1,15 @@
 <template>
-    <div class=" border bg-white">
-        <nav class=" container d-flex justify-content-between align-items-center p-2 ">
-            <div>
-                <span class=" d-flex align-items-center">
+    <div class=" border bg-white fixed-top ">
+        <nav class=" container d-flex flex-column flex-lg-row gap-2 justify-content-between align-items-center p-2 ">
+            <div class=" col-12 col-lg-2">
+                <span class=" d-flex  align-items-center">
                     <div class=" bg-primary p-1 rounded-2 me-2">
                         <IconsIcTwotoneShoppingBag class=" text-white-50 mb-0 h3 shadow " />
                     </div>
                     <span class=" fw-bolder text-primary mb-0 h2 opacity-50 ">Brand</span>
                 </span>
             </div>
-            <div class=" w-50">
+            <div class=" col-12 col-lg-7">
                 <div class=" input-group">
                     <input class="form-control rounded-end-0 w-25 border border-2 border-primary" type="search" placeholder="Search" aria-label="Search">
                     <select name="" id="" class=" form-select rounded-0 border border-primary border-2">
@@ -21,8 +21,8 @@
                     <button class="btn btn-primary">Search</button>
                 </div>
             </div>
-            <div>
-                <ul class=" list-unstyled d-flex justify-content-center align-items-center gap-3 mb-0 text-black-50">
+            <div class=" col-12 col-lg-3 d-none d-lg-block">
+                <ul class=" list-unstyled d-flex justify-content-end align-items-center gap-3 mb-0 text-black-50 ">
                     <li class=" d-flex flex-column justify-content-center align-items-center">
                         <IconsMaterialSymbolsPerson class=" h3 mb-0" />
                         <span class="small">Profile</span>

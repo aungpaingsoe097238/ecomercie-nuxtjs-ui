@@ -1,8 +1,8 @@
 <template>
-    <div class=" ">
+    <div style="margin-top: 130px;">
         <MainHero class=" my-3 "/>
-        <MainDiscount class=" my-3" />
-        <MainCategoryOne class="my-3" />
+        <MainDiscount class=" my-3 " />
+        <MainCategoryOne class="my-3 " />
     </div>
 </template>
 

@@ -2,8 +2,8 @@
     <!-- Hero -->
     <div class="card ">
         <div class="card-body">
-            <div class="row">
-                <div class="col-3">
+            <div class="row gap-3 gap-lg-0">
+                <div class="col-12 col-lg-3 d-none d-lg-block">
                     <ul class=" list-unstyled h-100 d-flex justify-content-between flex-column gap-2 ">
                         <li v-for="(menu,
                             index) in topMenus">
@@ -12,7 +12,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-7">
+                <div class="col-12 col-lg-7">
                     <div class=" h-100 rounded-2 shop-img ">
                         <div class="  d-flex flex-column gap-2 p-3">
                             <span class=" h4 mb-0 fw-medium">Latest trending</span>
@@ -23,7 +23,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-2">
+                <div class="col-12 col-lg-2">
                     <div class=" d-flex flex-column h-100 justify-content-between gap-2">
                         <div class=" bg-primary-subtle rounded-2 p-2 ">
                             <div class=" d-flex align-items-center gap-2 mb-2">
@@ -50,6 +50,13 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-12 d-block d-lg-none">
+                    <select name="" id="" class=" form-select">
+                        <option value="" v-for="(menu,index) in topMenus">
+                            <span :key="index">{{ menu.title }}</span>
+                        </option>
+                    </select>
+                </div> 
             </div>
         </div>
     </div>
