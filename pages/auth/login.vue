@@ -29,6 +29,7 @@
 
 <script setup>
 import axios from 'axios'
+import Cookies from 'js-cookie'
 
 const config = useRuntimeConfig();
 
@@ -43,6 +44,8 @@ const handleLogin = async () => {
     await axios.post(`${config.public.apiBase}/login`,data).then((res)=>{
         data.email = null;
         data.password = null;
+        Cookies.set("user", JSON.stringify(res.data.data), { expires: 10 });
+        Cookies.set("token", res.data.data.token, { expires: 10 });
         navigateTo('/product');
     }).catch((error)=>{
         console.log(error.response)
