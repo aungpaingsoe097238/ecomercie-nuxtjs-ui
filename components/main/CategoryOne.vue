@@ -9,11 +9,11 @@
                     </div>
                 </div>
             </div>
-            <div class="col-9">
+            <div class="col-12 col-lg-9">
                 <div>
                     <table class=" table table-bordered mb-0">
-                        <tr class=" category-one-item ">
-                            <td class=" position-relative">
+                        <tr class=" category-one-item  ">
+                            <td class="position-relative ">
                                 <div class=" mb-4">
                                     <p class=" fw-medium mb-1">Soft Chairs</p>
                                     <p class=" mb-0 small">From</p>
@@ -23,7 +23,7 @@
                                     <img src="https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg" style="height: 70px;" alt="">
                                 </div>
                             </td>
-                            <td class=" position-relative">
+                            <td class="position-relative">
                                 <div class=" mb-4">
                                     <p class=" fw-medium mb-1">Soft Chairs</p>
                                     <p class=" mb-0 small">From</p>
@@ -33,7 +33,7 @@
                                     <img src="https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg" style="height: 70px;" alt="">
                                 </div>
                             </td>
-                            <td class=" position-relative">
+                            <td class="position-relative">
                                 <div class=" mb-4">
                                     <p class=" fw-medium mb-1">Soft Chairs</p>
                                     <p class=" mb-0 small">From</p>
@@ -43,7 +43,7 @@
                                     <img src="https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg" style="height: 70px;" alt="">
                                 </div>
                             </td>
-                            <td class=" position-relative">
+                            <td class="position-relative">
                                 <div class=" mb-4">
                                     <p class=" fw-medium mb-1">Soft Chairs</p>
                                     <p class=" mb-0 small">From</p>
@@ -58,7 +58,7 @@
                 </div>
                 <div>
                     <table class=" table table-bordered mb-0">
-                        <tr class="category-one-item">
+                        <tr class="category-one-item ">
                             <td class=" position-relative">
                                 <div class=" mb-4">
                                     <p class=" fw-medium mb-1">Soft Chairs</p>
@@ -117,6 +117,14 @@
     background-color: yellow;
 }
 .category-one-item td {
-    padding: 15px;
+    padding: 15px !important;
 }
+
+@media only screen and (max-width: 600px) {
+.category-one-item {
+    display: flex !important;
+    flex-direction: column !important;
+}
+}
+
 </style>

@@ -1,6 +1,6 @@
 <template>
     <!-- Hero -->
-    <div class="card ">
+    <div class="card">
         <div class="card-body">
             <div class="row gap-3 gap-lg-0">
                 <div class="col-12 col-lg-3 d-none d-lg-block">
