@@ -56,7 +56,7 @@ const handleRegister = async () => {
         data.name = null;
         data.password = null;
         data.password_confirmation = null;
-        navigateTo('/product');
+        navigateTo('/login');
     }).catch((error)=>{
         console.log(error.response)
     })
