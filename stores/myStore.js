@@ -1,18 +1,23 @@
 import { defineStore } from 'pinia'
+import Cookies from "js-cookie"
 
-export const useCounterStore = defineStore("counter", () => {
-  const user = ref({})
-  const token = ref('');
-  const getUser = computed(() => user.value );
-  const getToken = computed(() => token.value );
+export const useAuthStore = defineStore('auth', () => {
+  const token = ref("")
 
-  function addToken(token) {
-    token = token
+  const getToken = computed(() => token.value )
+
+  function addToken() {
+    token.value = Cookies.get('token');
   }
 
-  function addUser(user){
-    token.value = user
+  function removeToken() {
+    Cookies.remove("user");
+    Cookies.remove("token")
+    token.value = "";
+    console.log(Cookies.get('token'))
+    console.log(Cookies.get('user'))
+    console.log(token.value)
   }
 
-  return { user, token, getUser, getToken, addToken, addUser };
-});
+  return { addToken, getToken, removeToken }
+})

@@ -50,6 +50,7 @@ definePageMeta({
 const config = useRuntimeConfig();
 
 const products = reactive([]);
+
 const handleFetchProducts = async () => {
   await axios
     .get(`${config.public.apiBase}/product`, {

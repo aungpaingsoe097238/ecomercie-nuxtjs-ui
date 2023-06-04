@@ -30,15 +30,10 @@
 <script setup>
 import axios from 'axios'
 import Cookies from 'js-cookie'
-import { useCounterStore } from '~/stores/myStore';
+import { useAuthStore } from '~/stores/myStore';
 
 const config = useRuntimeConfig();
-const store = useCounterStore();
-
-store.addToken("dfldjfl")
-
-console.log(store.getToken)
-
+const store = useAuthStore();
 
 const data = reactive(
     {
@@ -53,6 +48,7 @@ const handleLogin = async () => {
         data.password = null;
         Cookies.set("user", JSON.stringify(res.data.data), { expires: 10 });
         Cookies.set("token", res.data.data.token, { expires: 10 });
+        store.addToken()
         navigateTo('/product');
     }).catch((error)=>{
         console.log(error.response)
