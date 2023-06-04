@@ -30,8 +30,15 @@
 <script setup>
 import axios from 'axios'
 import Cookies from 'js-cookie'
+import { useCounterStore } from '~/stores/myStore';
 
 const config = useRuntimeConfig();
+const store = useCounterStore();
+
+store.addToken("dfldjfl")
+
+console.log(store.getToken)
+
 
 const data = reactive(
     {

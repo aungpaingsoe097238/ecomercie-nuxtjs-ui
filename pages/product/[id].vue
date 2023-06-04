@@ -2,6 +2,23 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <NuxtLink to="/">
+                Home
+              </NuxtLink>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              <NuxtLink to="/product" >
+                product
+              </NuxtLink>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+                {{ route.params.id }}
+            </li>
+          </ol>
+        </nav>
         <div class="card">
           <div class="card-body">
             <div class="row" v-if="loading == false">
@@ -45,12 +62,9 @@
                   </table>
                 </div>
 
-                <hr>
-
-                <div>
-                    <span class=""></span>
-                    {{ 0 }}
-                    <span></span>
+                <div class="">
+                  <button class="btn btn-dark">Buy now</button>
+                  <button class="btn btn-primary ms-2 ">Add to cart</button>
                 </div>
 
               </div>

@@ -9,6 +9,9 @@ export default defineNuxtConfig({
   plugins: [
     {src: '~/plugins/myPlugin', mode: 'client'}
   ],
+  modules: [
+    '@pinia/nuxt',
+  ],
   runtimeConfig: {
     // Private keys are only available on the server
     apiSecret: '123',
