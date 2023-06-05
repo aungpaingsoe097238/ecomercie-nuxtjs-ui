@@ -37,8 +37,8 @@ const store = useAuthStore();
 
 const data = reactive(
     {
-        'email': null,
-        'password': null
+        'email': 'admin@gmail.com',
+        'password': 'password'
     }
 );
 

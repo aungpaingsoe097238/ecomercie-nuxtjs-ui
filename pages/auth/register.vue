@@ -51,12 +51,11 @@ const data = reactive({
 
 const handleRegister = async () => {
     await axios.post(`${config.public.apiBase}/register`,data).then((res)=>{
-        console.log(res);
         data.email = null;
         data.name = null;
         data.password = null;
         data.password_confirmation = null;
-        navigateTo('/login');
+        navigateTo('/auth/login');
     }).catch((error)=>{
         console.log(error.response)
     })
