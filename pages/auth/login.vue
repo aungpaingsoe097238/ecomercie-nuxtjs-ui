@@ -44,14 +44,16 @@ const data = reactive(
 
 const handleLogin = async () => {
     await axios.post(`${config.public.apiBase}/login`,data).then((res)=>{
-        data.email = null;
-        data.password = null;
-        Cookies.set("user", JSON.stringify(res.data.data), { expires: 10 });
-        Cookies.set("token", res.data.data.token, { expires: 10 });
-        store.addToken()
-        navigateTo('/product');
+        if(res.data.data !== null){
+            data.email = null;
+            data.password = null;
+            Cookies.set("user", JSON.stringify(res.data.data), { expires: 10 });
+            Cookies.set("token", res.data.data.token, { expires: 10 });
+            store.addToken()
+            navigateTo('/product');
+        }
     }).catch((error)=>{
-        console.log(error.response)
+        console.log(error.response.data.message)
     })
 }
 

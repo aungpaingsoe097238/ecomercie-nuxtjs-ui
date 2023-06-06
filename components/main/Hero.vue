@@ -84,6 +84,10 @@
 
 <script setup>
 import { useAuthStore } from "~/stores/myStore";
+import axios from "axios";
+import Cookies from 'js-cookie'
+
+const config = useRuntimeConfig();
 
 const topMenus = reactive([
   { title: "Automobiles" },
@@ -100,8 +104,19 @@ const topMenus = reactive([
 const store = useAuthStore();
 store.addToken();
 
-const handleLogout = () => {
-    store.removeToken();
+const handleLogout = async () => {
+  axios.defaults.headers = {
+    Authorization : `Bearer ${Cookies.get('token')}`
+  }
+  await axios
+    .post(`${config.public.apiBase}/logout`)
+    .then((res) => {
+      store.removeToken();
+      console.log(res)
+    })
+    .catch((error) => {
+      console.log(error.response);
+    });
 };
 </script>
 
